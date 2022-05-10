@@ -1,0 +1,17 @@
+<template>
+	<div class="app slds-p-around_x-large">
+		<h1 class="slds-text-heading_large">Personagens da Disney</h1>
+
+ <template for:each={disney} for:item="personagens"> 
+	 <div key={personagens.cod}>
+		<p class="pes">Personagem</p>
+		<p>Nome: {personagens.nome}</p>
+		<p>Desenho: {personagens.desenho}</p>
+		<p>Agilidade: {personagens.agilidade}</p>
+		<p>Força:{personagens.forca}</p>
+		<p>Inteligência: {personagens.inteligencia}</p>
+		<p>Beleza: {personagens.beleza}</p><br>
+		</div>
+ </template>
+	</div>
+</template>
